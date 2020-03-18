@@ -16,8 +16,4 @@ public abstract class AbstractDAO {
     protected void persist(Object entity) {
         getSession().persist(entity);
     }
-
-    protected void delete(Object entity) {
-        getSession().delete(entity);
-    }
 }
