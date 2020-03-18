@@ -17,7 +17,7 @@ public class EquationImpl implements IEquation {
 
     private static final String SOLVED_MESSAGE_TEMPLATE = "Solved equation %.1fx^2 + %.1fx + %.1f = 0. First root = %.2f, second root = %.2f. Discriminant = %.2f.";
     private static final String ERROR_MESSAGE_TEMPLATE = "Error. The equation %.1fx^2 + %.1fx + %.1f = 0 has no roots. Discriminant = %.2f.";
-    private final Pattern pattern = Pattern.compile("-?\\d+(\\.\\d+)?");
+    private final Pattern isDigitPattern = Pattern.compile("-?\\d+(\\.\\d+)?");
 
     @Autowired
     private EquationDAO equationDaoImpl;
