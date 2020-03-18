@@ -75,7 +75,7 @@ public class EquationImpl implements IEquation {
         if (strNum == null) {
             return false;
         }
-        return pattern.matcher(strNum)
+        return isDigitPattern.matcher(strNum)
             .matches();
     }
 
